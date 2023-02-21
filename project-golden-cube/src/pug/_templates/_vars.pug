@@ -1,0 +1,25 @@
+//- Common variables
+-
+  let author = 'Artem Dots'
+  let themeColor = '#e5f1fb'
+
+  // Если требуется заглушка для Internet Explorer
+  let ieBung = false
+
+  //- Массив наименований шрифтов для перебора в head.pug и предзагрузки
+  let fontsPreload = [
+    'Raleway-Regular.woff2',
+    'Raleway-Medium.woff2',
+    'Raleway-SemiBold.woff2',
+    'Raleway-Bold.woff2'
+    ]
+  
+  //- ! URL определяется автоматом в миксине "меню" : pages-key+.html
+  let pages = {
+    index: {
+      name:   'главная',
+      title:  'Golden cube',
+      descr:  'Краткое описание главной страницы',
+      author:  author,
+    },
+  };
