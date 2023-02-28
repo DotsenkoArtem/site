@@ -1031,8 +1031,58 @@ select::-ms-expand {
   max-width: 70rem;
 }
 
+.color {
+  display: inline-block;
+  margin: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.555);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.555);
+  background-color: rgb(13, 110, 253);
+}
+.color-lighten {
+  background-color: #9ec5fe;
+}
+.color-darken {
+  background-color: #052c65;
+}
+
 /* Lazy 
  * -------------------------*/
+.lazy {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%), -o-linear-gradient(#DDD 100%, transparent 0);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(255, 255, 255, 0.5)), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(100%, #DDD), color-stop(0, transparent));
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%), linear-gradient(#DDD 100%, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 26% 100%, cover;
+  background-position: 0 0, 0 0, 0px 85px, 0px 110px;
+  -webkit-animation: animloader 1s linear infinite;
+  animation: animloader 1s linear infinite;
+}
+.lazy img {
+  visibility: hidden;
+}
+
+@-webkit-keyframes animloader {
+  0% {
+    background-position: 0 0, 0 0, 0px 85px, 0px 110px;
+  }
+  100% {
+    background-position: 150% 0, 0 0, 0px 85px, 0px 110px;
+  }
+}
+@keyframes animloader {
+  0% {
+    background-position: 0 0, 0 0, 0px 85px, 0px 110px;
+  }
+  100% {
+    background-position: 150% 0, 0 0, 0px 85px, 0px 110px;
+  }
+}
 /* ANIMATIONS
  * ------------------------------  */
 .fake-class-to-add-import-rule {

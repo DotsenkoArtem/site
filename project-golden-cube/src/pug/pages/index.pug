@@ -25,8 +25,19 @@ block main
                         span.d-block для видеосъемки 
                         span.d-block и вебинаров 
             .bg.bg_cover
-                img(src="img/hero-bg.jpg", alt="")
+                picture
+                  source(media='(max-width: 575px)', srcset='img/320/xs-images.jpg', type='image/jpg')
+                  |
+                  |
+                  img.lazy(data-src="img/hero-bg.jpg", alt="")
+                
+
+
+        .color 
+        .color.color-lighten
+        .color.color-darken
     |
+        
     
 
 
