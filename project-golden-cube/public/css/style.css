@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  I. Font settings
  * --------------------------------------- */ 
 @font-face {
@@ -982,6 +983,37 @@ select::-ms-expand {
  * --------------------------------------- */
 /* Header 
  * -------------------------*/
+/* ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ */
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bg_cover img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.bg_contain img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* Section-Hero 
+ * -------------------------*/
+.hero {
+  position: relative;
+  padding-top: 17.5rem;
+  padding-bottom: 31rem;
+}
+
 /* Lazy 
  * -------------------------*/
 /* ANIMATIONS
