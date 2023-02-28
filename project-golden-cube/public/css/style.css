@@ -163,11 +163,21 @@ address {
 }
 
 body {
-  font-family: "Raleway", "Helvetica", sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.5;
   color: #000000;
+}
+
+h1 {
+  font-size: 5.8rem;
+  font-weight: 600;
+  line-height: 7rem;
+  text-transform: uppercase;
+}
+h1 span.text-lg {
+  font-size: 1.34em;
 }
 
 a, a:visited {
@@ -190,7 +200,7 @@ input[type=submit],
 input[type=reset],
 input[type=button],
 .btn {
-  font-family: "Raleway", "Helvetica", sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   text-decoration: none;
   cursor: pointer;
   -webkit-user-select: none;
@@ -984,6 +994,10 @@ select::-ms-expand {
 /* Header 
  * -------------------------*/
 /* ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ */
+.text-content_light {
+  color: #ffffff;
+}
+
 .bg {
   position: absolute;
   top: 0;
@@ -1012,6 +1026,9 @@ select::-ms-expand {
   position: relative;
   padding-top: 17.5rem;
   padding-bottom: 31rem;
+}
+.hero__heading {
+  max-width: 70rem;
 }
 
 /* Lazy 
