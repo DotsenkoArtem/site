@@ -14,3 +14,22 @@ for (let image of images) {
     // console.dir(image);
 	})
 }
+
+
+
+// PAGE PRELOADER FUNCTION
+let preloader = document.createElement('div')
+preloader.className = 'preloader'
+document.body.append(preloader)
+
+
+window.onload = function() {
+	const PRELOADERTRANSITION = 1500
+	preloader.style.transition = `opacity ${PRELOADERTRANSITION}ms`
+	preloader.classList.add('fade-out')
+
+	setTimeout(function(){
+		preloader.remove()
+	},PRELOADERTRANSITION)
+}
+// - - - - - - - - - - - - - - - - - - - 
