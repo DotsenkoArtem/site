@@ -18,13 +18,9 @@ for (let image of images) {
 
 
 // PAGE PRELOADER FUNCTION
-let preloader = document.createElement('div')
-preloader.className = 'preloader'
-document.body.append(preloader)
-
 
 window.onload = function() {
-	const PRELOADERTRANSITION = 1500
+	const PRELOADERTRANSITION = 2000
 	preloader.style.transition = `opacity ${PRELOADERTRANSITION}ms`
 	preloader.classList.add('fade-out')
 
@@ -33,3 +29,10 @@ window.onload = function() {
 	},PRELOADERTRANSITION)
 }
 // - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+new WOW({
+	offset:       300,
+}).init();

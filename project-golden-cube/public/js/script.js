@@ -31,15 +31,16 @@ try {
 } finally {
   _iterator.f();
 }
-var preloader = document.createElement('div');
-preloader.className = 'preloader';
-document.body.append(preloader);
 window.onload = function () {
-  var PRELOADERTRANSITION = 1500;
+  var PRELOADERTRANSITION = 2000;
   preloader.style.transition = "opacity ".concat(PRELOADERTRANSITION, "ms");
   preloader.classList.add('fade-out');
   setTimeout(function () {
     preloader.remove();
   }, PRELOADERTRANSITION);
 };
-// - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - 
+
+new WOW({
+  offset: 300
+}).init();

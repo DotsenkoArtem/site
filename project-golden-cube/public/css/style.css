@@ -1035,6 +1035,19 @@ select::-ms-expand {
   opacity: 0;
 }
 
+.d-anim-delay-1000 {
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+}
+.d-anim-delay-1100 {
+  -webkit-animation-delay: 1100ms;
+  animation-delay: 1100ms;
+}
+.d-anim-delay-1200 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
 /* Section-Hero 
  * -------------------------*/
 .hero {

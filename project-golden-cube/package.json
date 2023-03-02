@@ -9,6 +9,7 @@
   "author": "Artem Dots",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -33,7 +34,12 @@
     "through2": "^4.0.2",
     "vinyl-buffer": "^1.0.1"
   },
-  "browserslist": [">0.2%", "not dead", "not op_mini all", "last 15 version"],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "last 15 version"
+  ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
