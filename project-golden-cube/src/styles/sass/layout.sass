@@ -196,6 +196,45 @@
   &.fade-out
     opacity: 0
 
+/* Header
+ -------------------------*/
+.nav-bar
+  &__container,
+  &-contacts 
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__container
+    margin: 0 auto
+    padding: 2.4rem v.$gutter
+    max-width: 179rem
+  &-contacts 
+    &__callback-btn
+      margin-left: 4rem
+  &__logo 
+    max-width: 15.5rem
+
+
+
+
+.top-menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    font: 
+      size: 1.6rem
+      weight: 700
+    a
+      color: v.$secondary-color
+    &:not(:last-child)
+      margin-right: 2em
+
+
+.callback-btn
+  &_mobile
+    display: none
+
 
 /* Section-Hero 
  -------------------------*/
@@ -206,7 +245,25 @@
     bottom: 31rem
 
   &__heading
+    margin-bottom: 2rem
     max-width: 70rem
+
+  &-text 
+    &_md 
+      margin-bottom: 2rem
+      font:
+        size: 2.6rem
+        weight: 700
+      p
+        &:not(:last-child)
+          margin-bottom: .6rem
+      
+    &_lg
+      font:
+        size: 4.2rem
+        weight: 500
+
+
     
 
 // Colors testing

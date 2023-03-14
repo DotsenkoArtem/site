@@ -9,7 +9,7 @@ block page-vars
 //-     h2 Wow, Block Head is undefined!
 
 
-block header
+//- block header
     h2 Wow, Block Header is undefined!
 
 
@@ -24,9 +24,18 @@ block main
                             span.text-lg GC 
                         span.d-block.animate__animated.animate__fadeInUp.d-anim-delay-1100 для видеосъемки 
                         span.d-block.animate__animated.animate__fadeInUp.d-anim-delay-1200 и вебинаров 
+
+                .hero-text_md
+                    p.animate__animated.animate__fadeIn.d-anim-delay-2200 Удивим зрителя
+                    p.animate__animated.animate__fadeIn.d-anim-delay-2300 Повысим конверсию
+
+                .hero-text_lg.animate__animated.animate__fadeIn.d-anim-delay-2700
+                    p
+                        |При заказе от 7 часов 
+                        span.badge.badge_primary +1 час в подарок
             .bg.bg_cover
                 picture
-                  source(media='(max-width: 320px)', srcset='img/320/hero-bgx320.jpg', type='image/jpg')
+                  source(media='(max-width: 575.98px)', srcset='img/xs/hero-bgx320.jpg', type='image/jpg')
                   |
                   |
                   img.lazy(data-src="img/hero-bg.jpg", alt="")

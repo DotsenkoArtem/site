@@ -1,4 +1,4 @@
-@use '_partials/_variables' as v
+@use '_partials/_variables' as *
 @use '_partials/_mixins' as m
 
 /* VII. Media-queries
@@ -89,6 +89,53 @@
     &-none
       &_md
         display: none
+
+  h1
+    font-size: 4.2rem 
+
+  // Mobile menu
+  .mobile-menu
+    display: block
+
+    &-trigger
+      display: block
+      width: 40px
+      height: 40px
+      border: solid 1px black
+    
+    &-wrap
+      display: flex
+      flex-directions: column
+      align-items: center
+      justify-content: center
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      transform: translateX(-100%)
+      z-index: 999
+      width: 100%
+      max-width: 420px
+      height: 100%
+      background: rgb(153, 153, 153)
+      &.open
+        transform: translateX(0)
+
+  .nav-bar-contacts 
+    display: none
+
+  .callback-btn
+    &_mobile
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      background-color: $primary-color
+      box-shadow: $primary-btn-shadow
+
 
 /* SM */
 @media (max-width: 767.98px)

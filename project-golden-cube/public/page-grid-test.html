@@ -34,21 +34,37 @@
       
       
       <!--  Header ================================================== -->
-      <header class="header" id="header">
-        <style>
-          a, a:visited{
-            color: #222;
-          }
-          .menu__item_current > a {
-            color: #00d;
-            text-decoration: underline;
-          }
-          .menu__item > a:hover {
-            color: #00d;
-          }
-          
-          
-        </style>
+      <header class="header">
+        <div class="nav-bar">
+          <div class="nav-bar__container">
+            <div class="mobile-menu-trigger"></div>
+            <div class="logo nav-bar__logo"> 
+              <picture>
+                <source media="(max-width: 575.98px)" srcset="img/xs/logo-xs.webp" type="image/webp">
+                <source media="(max-width: 575.98px)" srcset="img/xs/logo-xs.png" type="image/png">
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" alt="Логотип">
+              </picture>
+            </div>
+            <nav class="mobile-menu-wrap">
+              <ul class="top-menu mobile-menu">
+                <li class="top-menu__item"><a href="#">Что у нас есть</a></li>
+                <li class="top-menu__item"><a href="#">Для кого</a></li>
+                <li class="top-menu__item"><a href="#">Преимущества</a></li>
+                <li class="top-menu__item"><a href="#">Портфолио</a></li>
+                <li class="top-menu__item"><a href="#">Команда</a></li>
+                <li class="top-menu__item"><a href="#">Пакеты услуг</a></li>
+                <li class="top-menu__item"><a href="#">Отзывы</a></li>
+                <li class="top-menu__item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="nav-bar-contacts"> 
+              <div class="phone-link text-link text-link_primary"><a href="tel:+79530062888">+7 800 200 06 60 </a></div>
+              <button class="btn btn_primary btn_rounded callback-btn nav-bar-contacts__callback-btn">Оставить заявку</button>
+            </div>
+            <button class="callback-btn callback-btn_mobile"><i class="svg-tlg-trnsp-xs svg-tlg-trnsp-xs-dims"></i></button>
+          </div>
+        </div>
       </header>
       
       <main>

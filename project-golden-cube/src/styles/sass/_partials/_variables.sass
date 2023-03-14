@@ -1,5 +1,11 @@
 // COMMON SETTINGS
 
+// FONTS CONNECTING
+// Переменная для миксина подключения шрифтов - указать свойства для каждого начертания шрифта
+$fonts: ('Montserrat', 'Regular', 400, normal, swap),  ('Montserrat', 'Italic', 400, italic, swap), ('Montserrat', 'Medium', 500, normal, swap), ('Montserrat', 'SemiBold', 600, normal, swap), ('Montserrat', 'Bold', 700, normal, swap)
+// Переменная для основных стилей 
+$ff-primary: "Montserrat", "Helvetica", sans-serif
+
 //Status of using grid styles
 $grid-style: true
 
@@ -8,26 +14,29 @@ $gutter: 1.5rem
 
 // COLORS
 // ------------------------------
-$primary-color: rgba(255, 50, 50, 1)
+$primary-color: rgba(255, 74, 53, 1)
+$secondary-color: rgba(49, 53, 82, 1)
+$white: rgba(255, 255, 255, 1)
+
 // Text
-$text-primary-color: #000000
+$text-primary-color: $secondary-color
 // $text-highlight: #1C84E3
 $text-light: #ffffff
+
 // Links
-$link-color: #f00
+$primary-link-color: $primary-color
 // $text-link-color: #52596F
 // $text-link-hover-color: #654222
 
 // TYPOGRAPHY
-// Переменная для миксина подключения шрифтов - указать свойства для каждого начертания шрифта
-$fonts: ('Montserrat', 'Regular', 400, normal, swap),  ('Montserrat', 'Italic', 400, italic, swap), ('Montserrat', 'Medium', 500, normal, swap), ('Montserrat', 'SemiBold', 600, normal, swap), ('Montserrat', 'Bold', 700, normal, swap)
-// Переменная для основных стилей 
-$ff-primary: "Montserrat", "Helvetica", sans-serif
+
 
 // BUTTONS
-$btn-padding-y: 5rem
-$btn-padding-x: 5rem
-$btn-radius: 2.5rem
+// $btn-padding-y: 1.5rem
+$btn-padding-y: 1.072em
+// $btn-padding-x: 3rem
+$btn-padding-x: 2.143em
+$primary-btn-shadow: 0px 16px 24px rgba(255, 74, 53, 0.4)
 
 // MODAL
 // ------------------------------

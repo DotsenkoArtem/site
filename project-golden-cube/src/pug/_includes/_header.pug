@@ -1,22 +1,44 @@
-header.header#header
-  style.
-    a, a:visited{
-      color: #222;
-    }
-    .menu__item_current > a {
-      color: #00d;
-      text-decoration: underline;
-    }
-    .menu__item > a:hover {
-      color: #00d;
-    }
+header.header
+  .nav-bar
+    .nav-bar__container
 
+      .mobile-menu-trigger
 
-  //- h2 This is Template-Header!
+      .logo.nav-bar__logo 
+        picture
+          source(media='(max-width: 575.98px)', srcset='img/xs/logo-xs.webp', type='image/webp')
+          source(media='(max-width: 575.98px)', srcset='img/xs/logo-xs.png', type='image/png')
+          source(srcset='img/logo.webp', type='image/webp')
+          |
+          |
+          img(src='img/logo.png', alt='Логотип')
 
-  //- +topMenu
+      nav.mobile-menu-wrap
+        //- nav.mobile-menu-wrap.open
+        ul.top-menu.mobile-menu
+          li.top-menu__item
+            a(href="#") Что у нас есть
+          li.top-menu__item
+            a(href="#") Для кого
+          li.top-menu__item
+            a(href="#") Преимущества
+          li.top-menu__item
+            a(href="#") Портфолио
+          li.top-menu__item
+            a(href="#") Команда
+          li.top-menu__item
+            a(href="#") Пакеты услуг
+          li.top-menu__item
+            a(href="#") Отзывы
+          li.top-menu__item
+            a(href="#") Контакты
 
-  
-  //- .container
-  //-     div(style="text-align: center; font-size: 45px;") 
-  //-       u #{page.name} 
+      .nav-bar-contacts 
+        .phone-link.text-link.text-link_primary
+          a(href="tel:+79530062888") +7 800 200 06 60 
+        button.btn.btn_primary.btn_rounded.callback-btn.nav-bar-contacts__callback-btn Оставить заявку
+
+      button.callback-btn.callback-btn_mobile
+        i.svg-tlg-trnsp-xs.svg-tlg-trnsp-xs-dims
+
+        

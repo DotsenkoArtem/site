@@ -188,18 +188,14 @@ a
 	&, &:visited
 		text-decoration: none
 		outline: none
-		color: v.$link-color
-		transition: color .3s ease-in-out
 
-	// &.text-link
-	// 	&,
-	// 	&:visited
-	// 		color: v.$text-link-color
-	// 	&:hover,
-	// 	&:active,
-	// 	&:focus
-	// 		color: v.$text-link-hover-color
-	// 		text-decoration: underline
+.text-link
+	font:
+		size: 2rem
+		weight: 700
+	&_primary
+		a
+			color: v.$primary-link-color
 
 //   4. Images
 //  -------------------------
@@ -223,13 +219,24 @@ input[type="button"],
 	user-select: none
 
 .btn
-	padding: v.$btn-padding-y v.$btn-padding-x
-	display: inline-flex
-	justify-content: center
-	align-items: center
-	border-radius: v.$btn-radius
+	display: inline-block
+	text-align: center
 	background: none
 	overflow: hidden
+	text-transform: uppercase
+
+	&_primary
+		padding: v.$btn-padding-y v.$btn-padding-x
+		font:
+			size: 1.4rem
+			weight: 700
+		color: v.$white
+		background: v.$primary-color
+		box-shadow: 0px 16px 24px rgba(255, 74, 53, 0.4)
+
+	&_rounded
+		border-radius: 5rem
+
 		// &:hover
 		// &:active
 
@@ -250,6 +257,16 @@ input[type="button"],
 // input
 // 	&[type="submit"]
 // 		display: inline-block
+
+.badge
+	&_primary
+		margin-left: -.14em
+		padding-left: .14em
+		padding-right: .2em
+		display: inline-block
+		background: v.$primary-color
+		border-radius: .1428em
+		box-shadow: v.$primary-btn-shadow
 
 //  6. Forms 
 // -------------------------
