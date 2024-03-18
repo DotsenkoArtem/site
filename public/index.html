@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <!--  Basic Page Needs ==============================================-->
+    <meta charset="UTF-8">
+    <title>Dots Project</title>
+    <meta name="description" content="New project by Dots">
+    <meta name="author" content="Artem Dots">
+    <meta name="robots" content="index, nofollow">
+    <meta name="theme-color" content="#1C84E3">
+    
+    <!--  Fonts preload ==================================================-->
+    <link rel="preload" as="font" href="fonts/OpenSans-Light.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-LightItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-MediumItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-SemiBoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/OpenSans-ExtraBoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+    
+    <!--  Mobile Specific Metas ==================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--  CSS ==================================================-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--  Favicons ==================================================-->
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body> 
+    <div class="preloader" id="preloader"></div>
+    <div class="wrapper" id="wrapper">
+      
+      
+      <!--  Header ================================================== -->
+      <header class="header">
+        <h2 style="text-align: center; margin: 5rem auto; font-weight: 300;">Header</h2>
+      </header>
+      
+      <main class="main">
+        <h2 style="text-align: center; font-weight: 300;">Place here your content</h2>
+        <button class="btn btn_primary">BUTTON</button>
+      </main>
+      
+      
+      <!--  Footer ================================================== -->
+      <div class="modal modal-callback" id="callbackModal">
+        <div class="modal__content">
+          <button class="modal-close modal__close js-modal-close"><span class="modal-close__item"></span>
+            <span class="modal-close__item"></span>
+          </button>
+          <div class="modal__content-inner">
+            <div class="modal__header">
+              <div class="modal__title">
+                 Заказать бесплатную медаль:</div>
+            </div>
+            <div class="modal__body">
+              <div class="event-card__body">
+                <form class="form event-card__form">
+                  <div class="form-group">
+                    <input class="form-control" id="uerPhone" type="text" placeholder="+7 (___) ___-__-__" name="userPhone" required>
+                  </div>
+                  <div class="form-group">
+                    <div class="btn-wrap_primary loader-container">
+                      <button class="btn btn_primary btn_fluid" type="submit">Оформить заявку</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__overlay js-modal-close modal" id="offer"></div>
+      </div>
+      
+    </div>
+    
+    <!-- Scripts ================================================== -->
+    <script src="js/script.dev.js"></script>
+  </body>
+</html>
